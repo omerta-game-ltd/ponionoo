@@ -1,4 +1,5 @@
-# Tor Utils API ![Test](https://travis-ci.org/OmertaGameLtd/ponionoo.svg "Test pass")
+# Tor Utils API [![Build Status](https://travis-ci.org/OmertaGameLtd/ponionoo.png?branch=master)](https://travis-ci.org/OmertaGameLtd/ponionoo)
+
 
 ## Tor detector
 
