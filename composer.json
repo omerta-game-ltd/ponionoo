@@ -1,0 +1,23 @@
+{
+  "name": "omerta/ponionoo",
+  "description": "A php api for onionoo, it allows you to get all tor related information",
+  "keywords": ["php", "tor", "onionoo", "omerta"],
+  "homepage": "https://github.com/omerta/ponionoo",
+  "type": "library",
+  "license": "Apache-2.0",
+  "support": {
+    "issues": "https://github.com/omerta/ponionoo/issues",
+    "source": "https://github.com/facebook/php-webdriver"
+  },
+  "require": {
+    "php": ">=5.3.19",
+	"ext-curl": "*",
+	"curl/curl": "1.1.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "3.7.*"
+  },
+  "autoload": {
+    "classmap": ["lib/"]
+  }
+}
