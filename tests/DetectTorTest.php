@@ -14,13 +14,13 @@ class DetectTorTest extends \PHPUnit_Framework_TestCase {
 	public function testTorEnabled() {
 		$opc = new OPCOnionoo();
 		$result = $opc->isTorEnabled("96.47.226.22");
-		$this->assertTrue($result);
+		$this->assertTrue($result, 'The ip is down or the API is not recheable');
 	}
 	
 	public function testTorDisabled() {
 		$opc = new OPCOnionoo();
 		$result = $opc->isTorEnabled("127.0.0.1");
-		$this->assertFalse($result);
+		$this->assertFalse($result, 'The API is not recheable');
 	}
 	
 }
