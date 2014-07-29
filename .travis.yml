@@ -12,6 +12,12 @@ language: php
 php:
   - 5.4
   - 5.5
+  - hhvm-nightly
+
+matrix:
+    fast_finish: true
+    allow_failures:
+        - php: hhvm-nightly
 
 before_script:
   - curl -s http://getcomposer.org/installer | php --
@@ -19,6 +25,3 @@ before_script:
 
 script: --configuration phpunit.xml.dist
 
-notifications:
-  email:
-    - germanazo@gmail.com
