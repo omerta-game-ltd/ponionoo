@@ -1,0 +1,20 @@
+##
+# This file is part of Ponionoo PHP API FOR Onionoo.
+#
+# (c) Bortoli German for Omerta Game Ltd <support@omertagame.co.uk>
+#
+# This source file is subject to the MIT license that is bundled
+# with this source code in the file LICENSE.
+#
+
+language: php
+
+php: [5.4, 5.5, hhvm-nightly]
+
+matrix:
+    fast_finish: true
+    allow_failures:
+        - php: hhvm-nightly
+
+script:
+    - phpunit --configuration phpunit.xml.dist
