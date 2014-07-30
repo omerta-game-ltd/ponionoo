@@ -2,7 +2,7 @@
 
 namespace Omerta\Ponionoo\Classes;
 
-use Omerta\Ponionoo\Interfaces\OPIApi;
+use Omerta\Ponionoo\Interfaces\OPIApiInterface;
 use Curl\Curl;
 
 /**
@@ -10,7 +10,7 @@ use Curl\Curl;
  *
  * @author Bortoli German for Omerta Game Ltd <support@omertagame.co.uk>
  */
-class OPCApi implements OPIApi {
+class OPCApi implements OPIApiInterface {
 
 	protected $url;
 	protected $headers;

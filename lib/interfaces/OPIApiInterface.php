@@ -13,7 +13,7 @@ namespace Omerta\Ponionoo\Interfaces;
  *
  * @author Bortoli German for Omerta Game Ltd <support@omertagame.co.uk>
  */
-interface OPIApi {
+interface OPIApiInterface {
 
 	/**
 	 * Set the current URL
