@@ -38,6 +38,8 @@ class OPCApi implements OPIApiInterface {
 		$def_opts = array(
 			CURLOPT_SSL_VERIFYPEER => FALSE,
 			CURLOPT_SSL_VERIFYHOST => FALSE,
+			CURLOPT_CONNECTTIMEOUT => 3,
+			CURLOPT_TIMEOUT => 5,
 		);
 
 		$opts = $def_opts + $opts;
